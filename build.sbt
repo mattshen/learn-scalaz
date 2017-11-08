@@ -9,6 +9,9 @@ lazy val root = (project in file(".")).
     )),
     name := "Hello",
     libraryDependencies ++= Seq(
-      scalaTest % Test,
+      "org.scalaz" %% "scalaz-core" % "7.2.16",
+      "org.scalaz" %% "scalaz-concurrent"   % "7.2.16",
+      "org.asynchttpclient" % "async-http-client" % "2.0.37",
+      scalaTest % Test
     )
   )
